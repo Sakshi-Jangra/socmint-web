@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Socmint</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Js Files-->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .fakeimg {
+        height: 200px;
+        background: #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="menu-outer">
+      <!-- logo -->
+      <a href="index.html" class="logo">
+        <img class="logo" src="./img/dark.png" alt="" />
+      </a>
+
+      <!-- Navigation -->
+
+      <span style="font-size: 30px; cursor: pointer;" onclick="openNav()"
+        >&#9776;Socmint</span
+      >
+      <!-- navigation content -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><img src="./img/back.png"
+        /></a>
+
+        <a href="index.html">Socmint Tool</a>
+        <a href="gallery.html">Tutorials</a>
+        <a href="services.html">Our Services</a>
+
+        <hr style="width: 40%; border: 1px cyan solid;" />
+
+        <div class="dropdown">
+          <button class="dropbtn" href="#">Test</button>
+          <div class="dropdown-content">
+            <a href="#">Search Topics</a>
+            <a href="#">Search for an account</a>
+            <a href="#">Sentiment Analysis</a>
+          </div>
+        </div>
+
+        <hr style="width: 40%; border: 1px cyan solid;" />
+
+        <a href="contact.html">Contact</a>
+        <a href="about-us.html">Documentation</a>
+        <hr style="width: 40%; border: 1px cyan solid;" />
+      </div>
+    </div>
+
+    <div
+      style="
+        background-image: url(img/bg.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60em;
+      "
+      class="jumbotron text-center"
+    >
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>About Me</h2>
+          <h5>Photo of me:</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <h3>Some Links</h3>
+          <p>Lorem ipsum dolor sit ame.</p>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+          <hr class="hidden-sm hidden-md hidden-lg" />
+        </div>
+        <div class="col-sm-8">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+          <br />
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg">Fake Image</div>
+          <p>Some text..< /p></p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0;">
+      <p>Footer</p>
+    </div>
+  </body>
+</html>
