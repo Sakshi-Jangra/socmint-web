@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Socmint WEB</title>
+    <title>Socmint</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -10,23 +10,32 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+  
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
     <!--CSS files-->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!--Js Files-->
     <script type="text/javascript" src="js/nav.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-      .fakeimg {
-        height: 200px;
-        background: #aaa;
-      }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+    
     <div id="menu-outer">
       <!-- logo -->
       <a href="index.html" class="logo">
@@ -34,15 +43,17 @@
       </a>
 
       <!-- Navigation -->
-
-      <span style="font-size: 30px; cursor: pointer;" onclick="openNav()"
-        >&#9776;Socmint</span
-      >
+      <span
+        style="font-size: 30px; color: whitesmoke; cursor: pointer;"
+        onclick="openNav()"
+        ><button class="btn"><i class="fa fa-home"></i></button
+      ></span>
+      
       <!-- navigation content -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          ><img src="./img/back.png"
-        /></a>
+          ><button class="btn"><i class="fa fa-close"></i></button
+        ></a>
 
         <a href="index.html">Socmint Tool</a>
         <a href="gallery.html">Tutorials</a>
@@ -64,64 +75,205 @@
         <a href="contact.html">Contact</a>
         <a href="about-us.html">Documentation</a>
         <hr style="width: 40%; border: 1px cyan solid;" />
+
+        <!-- log in / Out -->
+        <div  style="margin: 2em 2em 2em 2em; padding-right: 20px;">
+          
+          <button class="btn btn-primary btn-success" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Log in</button>
+          
+          <button href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-off"></span> Log out</button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                Modal body..
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!--      ------------     Tool Input here    -----------------    -->
     <div
-      style="
-        background-image: url(img/bg.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 60em;
-      "
+      style="background-image: url(img/bg.gif);"
+      id="bg1"
       class="jumbotron text-center"
     >
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h2>About Me</h2>
-          <h5>Photo of me:</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3>Some Links</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-          <hr class="hidden-sm hidden-md hidden-lg" />
-        </div>
-        <div class="col-sm-8">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
-          <br />
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..< /p></p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
-        </div>
+      <div class="content-style">
+        <h1><b>SOCMINT</b></h1>
+        <h2>Social Media Intelligence Analyser  </h2>
+        <br />
+        <p>
+          <i>
+            Get the results in minutes Analyse any social media handle by
+            Username.
+          </i>
+        </p>
+        <a href="#" target="_blank"
+          class="btn btn-outline-primary btn-block" style="width: fit-content; margin-right: 50%; margin-left: 50%; padding: 15px"><b>TEST</b></a>
       </div>
     </div>
+      <!-- BUTTONS GROUPING TO LEFT
+      
+      <div class="btn-group-vertical" style="z-index: 0;">
+        <a href="#" class="btn btn-success">Vedas</a>
+        <a href="#" class="btn btn-outline-success">MahaBharat</a>
+        <a href="#" class="btn btn-success">Ramayan</a>
+        <a href="#" class="btn btn-outline-success">Shastra</a>
+        <a href="#" class="btn btn-success">Maths</a>
+      </div> -->
 
+  </header>
+    <div class="s009">
+      <form>
+        <div class="inner-form">
+          <div class="basic-search">
+            <div class="input-field">
+              <input id="search" type="text" placeholder="Type Keywords" />
+              <div class="icon-wrap">
+                <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas"
+                  data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="advance-search">
+            <span class="desc">ADVANCED SEARCH</span>
+            <div class="row">
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Accessories</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Color</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Size</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row second">
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Sale</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Time</option>
+                    <option>Last time</option>
+                    <option>Today</option>
+                    <option>This week</option>
+                    <option>This month</option>
+                    <option>This year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Type</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row third">
+              <div class="input-field">
+                <div class="result-count"><span>108 </span>results</div>
+                <div class="group-btn">
+                  <button class="btn-delete" id="delete">RESET</button>
+                  <button class="btn-search">SEARCH</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+      <button class="accordion">Analyse Twitter</button>
+      <div class="panel">
+              <img style="width: 150px; margin-left: 30%;" src="./img/about/twitter-analysis-pic.png" />
+              <p>The tool analyses the hashtags , followers , following, tweets etc. and harvest the text analysis as output.</p>
+              <br>
+              <a href="#">Read more</a>
+      </div>
+
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+   <script>
+     // -------------- About    ----------------
+      var acc = document.getElementsByClassName('accordion');
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+      }
+
+   </script>
+
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span style='font-size:15px;'>&#9757;</span></button>
+
+    <!-- footer for contacts -->
     <div class="jumbotron text-center" style="margin-bottom: 0;">
       <p>Footer</p>
     </div>
