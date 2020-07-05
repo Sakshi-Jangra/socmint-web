@@ -10,7 +10,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-  
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+
 
     <!-- fonts -->
     <link
@@ -26,6 +28,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
 
     <!--Js Files-->
     <script type="text/javascript" src="js/nav.js"></script>
@@ -34,7 +37,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
+  <body data-gr-c-s-loaded="true">
     
     <div id="menu-outer">
       <!-- logo -->
@@ -127,7 +130,7 @@
           </i>
         </p>
         <a href="#" target="_blank"
-          class="btn btn-outline-primary btn-block" style="width: fit-content; margin-right: 50%; margin-left: 50%; padding: 15px"><b>TEST</b></a>
+          class="btn btn-outline-primary btn-block" style="width: fit-content; margin-right: 50%; margin-left: 47%; padding: 15px"><b>TEST</b></a>
       </div>
     </div>
       <!-- BUTTONS GROUPING TO LEFT
@@ -141,12 +144,13 @@
       </div> -->
 
   </header>
+  
     <div class="s009">
       <form>
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
-              <input id="search" type="text" placeholder="Type Keywords" />
+              <input id="search" type="text" placeholder="Username" />
               <div class="icon-wrap">
                 <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas"
                   data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -163,18 +167,20 @@
               <div class="input-field">
                 <div class="input-select">
                   <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Accessories</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                    <option placeholder="" value="">Download</option>
+                    <option >.pdf</option>
+                    <option>.txt</option>
                   </select>
                 </div>
               </div>
               <div class="input-field">
                 <div class="input-select">
                   <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Color</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                    <option placeholder="" value="">Include</option>
+                    <option>followers</option>
+                    <option>following</option>
+                    <option>Bio</option>
+                    <option>Tweets/posts</option>
                   </select>
                 </div>
               </div>
@@ -222,7 +228,8 @@
             </div>
             <div class="row third">
               <div class="input-field">
-                <div class="result-count"><span>108 </span>results</div>
+                <div class="result-count">
+                  <span>108 </span>results</div>
                 <div class="group-btn">
                   <button class="btn-delete" id="delete">RESET</button>
                   <button class="btn-search">SEARCH</button>
@@ -233,7 +240,7 @@
         </div>
       </form>
     </div>
-
+    
       <button class="accordion">Analyse Twitter</button>
       <div class="panel">
               <img style="width: 150px; margin-left: 30%;" src="./img/about/twitter-analysis-pic.png" />

@@ -12,7 +12,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.7s;
+  transition: 0.2s;
   padding-top: 60px;
 }
 
@@ -102,7 +102,7 @@ ul#horizontal-list li {
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 4px 8px; /* Some padding */
-
+  margin-bottom: 10%;
   font-size: 20px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
 }
@@ -112,14 +112,14 @@ ul#horizontal-list li {
   background-color: rgb(87, 230, 255);
 }
 .dropbtn {
-  background-color: aquamarine;
-  color: black;
+  background-color: #b233b7;
+  color: white;
   padding: 5px 20px;
   font-size: 20px;
   border: none;
   border-radius: 20px;
   position: relative;
-  left: 115%;
+  margin-left: 110%;
 }
 
 .dropdown {
@@ -148,7 +148,7 @@ ul#horizontal-list li {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inherit;
 }
 
 .dropdown:hover .dropbtn {
@@ -220,7 +220,7 @@ ul#horizontal-list li {
   text-align: left;
   border: none;
   outline: none;
-  transition: 1.2s;
+  transition: 0.8s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

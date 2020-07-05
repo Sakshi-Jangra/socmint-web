@@ -7,11 +7,29 @@ html {
   /* 2 */
 }
 
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
 article,
 aside,
 footer,
+header,
+nav,
 section {
   display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -865,9 +883,9 @@ legend {
   min-width: 100px;
   height: 40px;
   padding: 0 15px;
-  background: #00bbec;
+  background: salmon;
   white-space: nowrap;
-  border-radius: 0;
+  border-radius: 8px;
   font-size: 14px;
   color: #fff;
   transition: all 0.2s ease-out, color 0.2s ease-out;
@@ -906,7 +924,7 @@ legend {
 
 .s009 form .inner-form .basic-search {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  border-bottom: 2px solid #00bbec;
+  border-bottom: 2px solid salmon;
 }
 
 .s009 form .inner-form .basic-search .input-field {
@@ -997,7 +1015,7 @@ legend {
   .input-field
   .result-count
   span {
-  color: #00bbec;
+  color: salmon;
   padding-right: 5px;
 }
 
@@ -1068,7 +1086,7 @@ legend {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  color: #00bbec;
+  color: #555;
   font-weight: bold;
 }
 
@@ -1097,7 +1115,7 @@ legend {
   .choices__list--dropdown
   .choices__item--selectable.is-highlighted {
   background: transparent;
-  color: #00bbec;
+  color: #555;
 }
 
 .s009 form .inner-form .advance-search .choices__list--dropdown .choices__item {
